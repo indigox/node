@@ -7,7 +7,7 @@ RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noar
  && yum update -y \
  && yum upgrade
 
-# install node & npm
-RUN yum install -y npm
+# install node & npm & git
+RUN yum install -y npm git
 
 CMD ["node"]
